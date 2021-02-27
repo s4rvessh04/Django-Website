@@ -51,24 +51,3 @@ input {
 .ssp {
     font-family: 'Source Sans Pro', sans-serif;
 }
-/* SCROLL BAR CSS */
-
-/* width */
-/* ::-webkit-scrollbar {
-width: 10px;
-} */
-
-/* Track */
-/* ::-webkit-scrollbar-track {
-background: rgba(226, 226, 226, 0.6); 
-} */
-
-/* Handle */
-/* ::-webkit-scrollbar-thumb {
-background: rgb(200, 200, 200); 
-} */
-
-/* Handle on hover */
-/* ::-webkit-scrollbar-thumb:hover {
-background: #ccc; 
-} */

@@ -4,7 +4,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">{% load static %}
     <link rel="stylesheet" href="{% static 'UniWeb/css/bootstrap.min.css' %}">
-    <link rel="stylesheet" type="text/css" href="{% static 'UniWeb/login_page.css' %}">
+    <link rel="stylesheet" type="text/css" href="{% static 'UniWeb/css/login_page.css' %}">
     <link rel="preconnect" href="https://fonts.gstatic.com">
     <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;600&display=swap" rel="stylesheet">
     <link rel="preconnect" href="https://fonts.gstatic.com">
@@ -14,7 +14,7 @@
 <body>
     <div class="container-fluid" style="display: flex;height: 100vh;align-items: center;justify-content: center;">
         <div class="container_main">{% load static %}
-            <img src="{% static 'UniWeb/unicap.svg' %}" class="unicaplogo" alt="Search glass" width="72.8px" height="71.2px">
+            <img src="{% static 'UniWeb/svg/unicap.svg' %}" class="unicaplogo" alt="Search glass" width="72.8px" height="71.2px">
             <h1>Log in Portal</h1>
             {% for message in messages %}
             {% if message.level == DEFAULT_MESSAGE_LEVELS.ERROR %}<p id="error">{{message}}</p>

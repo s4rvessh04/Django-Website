@@ -10,7 +10,7 @@
     <title>Create Academic Record</title>
 </head>
 <body>
-    <script src="{% static 'UniWeb/js/bootstrap.min.js' %}"></script>
+    <script src="{% static 'UniWeb/js/bootstrap.bundle.min.js' %}"></script>
     <script src="https://code.jquery.com/jquery-3.3.1.min.js"></script>
     <style>
         label {
@@ -40,10 +40,10 @@
             opacity: 0.8;
         }
     </style>
-    <nav class="navbar sticky-top navbar-expand-lg navbar-light">
+    <nav class="navbar navbar-expand-lg navbar-light">
         <div class="container-fluid px-xl-5 pt-1">
             <a class="navbar-brand" href="{% url 'user_view' %}">
-                <p class="h6 fw-bold" style="font-size: 24px;color: #24294E">
+                <p class="h6 fw-bold mb-0" style="font-size: 24px;color: #24294E">
                     <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 16 16" width="16" height="16" fill="#24294E">
                         <path fill-rule="evenodd" d="M7.78 12.53a.75.75 0 01-1.06 0L2.47 8.28a.75.75 0 010-1.06l4.25-4.25a.75.75 0 011.06 1.06L4.81 7h7.44a.75.75 0 010 1.5H4.81l2.97 2.97a.75.75 0 010 1.06z"></path>
                     </svg>
@@ -54,10 +54,10 @@
     </nav>
     <h4 style="font-family: 'Poppins', sans-serif;font-weight: 600;" class="text-center mb-4">Academic Form</h4>
     <div class="container-fluid" style="padding: 0;display: flex;justify-content: center;align-items: center;">
-        <div class="container glass" style="height: 80vh;">
-            <div class="row row-cols-lg-auto g-3 justify-content-center" style="margin-bottom: 0;">
+        <div class="container glass py-4" style="height: 80vh;">
+            <div class="row row-cols-lg-auto g-3 justify-content-center">
                 <form action="" method="GET">
-                    <div class="form-floating" style="font-family: 'Poppins', sans-serif;font-weight: 600;">
+                    <div class="form-floating mb-4" style="font-family: 'Poppins', sans-serif;font-weight: 600;">
                         {% for form in myfilter.form %}
                             {{form}}    
                             <label for="floatingSelect" style="margin-left: 0;">{{form.label}}</label>

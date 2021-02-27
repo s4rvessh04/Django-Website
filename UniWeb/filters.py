@@ -28,4 +28,4 @@ class StudentFilter(django_filters.FilterSet):
     def __init__(self, data=None, queryset=None, *, request=None, prefix=None):
         super(StudentFilter, self).__init__(
             data=data, queryset=queryset, request=request, prefix=prefix)
-        self.filters['branch'].field.widget.attrs.update({"class": "form-select form-select-lg mb-3", "aria-label": ".form-select-lg example", 'onchange': "this.form.submit()"})
+        self.filters['branch'].field.widget.attrs.update({"class": "form-select form-select mb-4", "aria-label": "Floating label select example", "id": "floatingSelect", 'onchange': "this.form.submit()"})

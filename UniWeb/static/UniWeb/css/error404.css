@@ -15,7 +15,7 @@ h5 {
 input {
     align-items: center;
     padding: 12px 24px;
-    background: transparent url(../UniWeb/arrow_back_bold.png) no-repeat left;
+    background: transparent url(../UniWeb/png/arrow_back_bold.png) no-repeat left;
     background-position-x: 1rem;
     background-position-y: 0.9rem;
     cursor: pointer;

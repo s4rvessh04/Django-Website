@@ -1,6 +1,6 @@
 {% extends "base.html" %}
 {% load static %}
-{% block css %}<link rel="stylesheet" type="text/css" href="{% static 'UniWeb/user_view.css' %}">{% endblock %}
+{% block css %}<link rel="stylesheet" type="text/css" href="{% static 'UniWeb/css/user_view.css' %}">{% endblock %}
 {% block title %}Student's Page{% endblock %}
 {% block nav %}
 <style>
@@ -12,68 +12,68 @@
     }
 </style>
 <a class="navbar-brand" href="{% url 'home' %}">
-    <p class="h6 poppins" style="font-size: 24px;"><i class="fa fa-graduation-cap text-white" data-bs-toggle="tooltip" data-bs-placement="bottom" title="College Home"></i></p>
+    <p class="h6 poppins mb-0" style="font-size: 24px;"><i class="fa fa-graduation-cap text-white" data-bs-toggle="tooltip" data-bs-placement="bottom" title="College Home"></i></p>
 </a>
 <button class="navbar-toggler collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#navbarColor03" aria-controls="navbarColor03" aria-expanded="false" aria-label="Toggle navigation" style="background-color: #fff;">
     <span class="navbar-toggler-icon"></span>
 </button>
 <div class="collapse navbar-collapse" id="navbarColor03">
-    <ul class="navbar-nav me-auto mb-2 mb-lg-0 ">
+    <ul class="navbar-nav me-auto mb-0">
         <li class="nav-item pe-1">
             <a class="nav-link" href="http://www.unipune.ac.in/">
-                <p class="h6 poppins text-white">Circulars</p>
+                <p class="h6 poppins text-white mb-0">Circulars</p>
             </a>
         </li>
         <li class="nav-item pe-1">
             <a class="nav-link" href="{% url 'developers_view' %}">
-                <p class="h6 poppins text-white">Developers</p>
+                <p class="h6 poppins text-white mb-0">Developers</p>
             </a>
         </li>
         <li class="nav-item pe-1">
             <a class="nav-link" href="{% url 'api_docs_view' %}">
-                <p class="h6 poppins text-white">Docs</p>
+                <p class="h6 poppins text-white mb-0">Docs</p>
             </a>
         </li>
         <li class="nav-item pe-1">
             <a class="nav-link" href="{% url 'about_view' %}" aria-current="page">
-                <p class="h6 poppins text-white">About</p>
+                <p class="h6 poppins text-white mb-0">About</p>
             </a>
         </li>
     </ul>
     <ul class="navbar-nav ms-auto">
-        <div class="dropdown">
-            <button class="my-btn btn p-0 mb-2" type="button" id="dropdownMenuButton" data-bs-toggle="dropdown" aria-expanded="false">
-                <img src="{% static 'UniWeb/settings-white-24dp.svg' %}" alt="">
+        <div class="dropdown mb-1">
+            <button class="my-btn btn p-0 m-0" type="button" id="dropdownMenuButton" data-bs-toggle="dropdown" aria-expanded="false">
+                <img src="{% static 'UniWeb/svg/settings-white-24dp.svg' %}" alt="">
             </button>
             <ul class="dropdown-menu shadow" aria-labelledby="dropdownMenuButton">
                 <li>
                     <a class="dropdown-item" href="{% url 'account_settings' %}">
-                        <img class="drop-ico" src="{% static 'UniWeb/person-accounts.svg' %}" alt="conference.ico" width="35px" height="35px" style="margin-right: 0.8rem;">
+                        <img class="drop-ico" src="{% static 'UniWeb/svg/person-accounts.svg' %}" alt="conference.ico" width="35px" height="35px" style="margin-right: 0.8rem;">
                         Account Settings
                         <p style="font-size: 10px;font-family: 'Poppins',sans-serif;font-weight: 500;margin-left: 3.1rem;margin-bottom: 0rem;">{{obj.email}}</p>
                     </a>
                 </li>
                 <li>
                     <a class="dropdown-item" href="{% url 'profile_view' %}">
-                        <img class="drop-ico" src="{% static 'UniWeb/user-profile.svg' %}" alt="conference.ico" width="35px" height="35px" style="margin-right: 0.8rem;">
+                        <img class="drop-ico" src="{% static 'UniWeb/svg/user-profile.svg' %}" alt="conference.ico" width="35px" height="35px" style="margin-right: 0.8rem;">
                         Profile
                     </a>
                 </li>
                 <li>
                     <a class="dropdown-item" href="#">
-                        <img class="drop-ico" src="{% static 'UniWeb/status.svg' %}" alt="conference.ico" width="35px" height="35px" style="margin-right: 0.8rem;">
+                        <img class="drop-ico" src="{% static 'UniWeb/svg/status.svg' %}" alt="conference.ico" width="35px" height="35px" style="margin-right: 0.8rem;">
                         Set Status
                     </a>
                 </li>
                 <li>
                     <a class="dropdown-item" href="#">
-                        <img class="drop-ico" src="{% static 'UniWeb/round-help-button.svg' %}" alt="conference.ico" width="35px" height="35px" style="margin-right: 0.8rem;">
+                        <img class="drop-ico" src="{% static 'UniWeb/svg/round-help-button.svg' %}" alt="conference.ico" width="35px" height="35px" style="margin-right: 0.8rem;">
                         Help
                     </a>
                 </li>
                 <li>
                     <a class="dropdown-item" href="{% url 'logout_view' %}">
-                        <img class="drop-ico" src="{% static 'UniWeb/log-out.svg' %}" alt="conference.ico" width="35px" height="35px" style="margin-right: 0.8rem;">
+                        <img class="drop-ico" src="{% static 'UniWeb/svg/log-out.svg' %}" alt="conference.ico" width="35px" height="35px" style="margin-right: 0.8rem;">
                         Logout
                     </a>
                 </li>
