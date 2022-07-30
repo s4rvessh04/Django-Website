@@ -1,1 +1,1 @@
-web: gunicorn UniWeb.wsgi --log-file -
+web: gunicorn Website.wsgi --log-file -
